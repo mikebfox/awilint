@@ -1,10 +1,10 @@
 {
-  "name": "awilint",
+  "name": "@foxom/awilint",
   "version": "0.1.0",
   "description": "Static checks for agentic workflow injection risks in GitHub Actions.",
   "type": "module",
   "bin": {
-    "awilint": "./src/cli.js"
+    "awilint": "src/cli.js"
   },
   "exports": {
     ".": {

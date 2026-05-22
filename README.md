@@ -20,7 +20,7 @@ Recent agent and supply-chain security work points at the same operational gap:
 ## Install
 
 ```sh
-npm install -D awilint
+npm install -D @foxom/awilint
 ```
 
 Requires Node.js 20 or newer.
@@ -54,7 +54,7 @@ cat .github/workflows/agent.yml | npx awilint -
 ## Library usage
 
 ```js
-import { scanWorkflow, formatTextReport } from "awilint";
+import { scanWorkflow, formatTextReport } from "@foxom/awilint";
 
 const workflow = `
 on:
