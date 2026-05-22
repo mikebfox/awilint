@@ -19,10 +19,8 @@ Recent agent and supply-chain security work points at the same operational gap:
 
 ## Install
 
-`awilint` is not published to the npm registry yet. Install it from GitHub:
-
 ```sh
-npm install -D github:mikebfox/awilint
+npm install -D awilint
 ```
 
 Requires Node.js 20 or newer.
@@ -32,25 +30,25 @@ Requires Node.js 20 or newer.
 Scan the default workflow directory:
 
 ```sh
-npm exec awilint --
+npx awilint
 ```
 
 Scan explicit files or directories:
 
 ```sh
-npm exec awilint -- .github/workflows/agent.yml workflows/
+npx awilint .github/workflows/agent.yml workflows/
 ```
 
 Use JSON output in CI:
 
 ```sh
-npm exec awilint -- --json --fail-on medium
+npx awilint --json --fail-on medium
 ```
 
 Read a workflow from stdin:
 
 ```sh
-cat .github/workflows/agent.yml | npm exec awilint -- -
+cat .github/workflows/agent.yml | npx awilint -
 ```
 
 ## Library usage
