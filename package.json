@@ -1,0 +1,44 @@
+{
+  "name": "awilint",
+  "version": "0.1.0",
+  "description": "Static checks for agentic workflow injection risks in GitHub Actions.",
+  "type": "module",
+  "bin": {
+    "awilint": "./src/cli.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.js"
+    }
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "github-actions",
+    "ai-agents",
+    "prompt-injection",
+    "security",
+    "ci-cd",
+    "supply-chain"
+  ],
+  "author": "mikebfox",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikebfox/awilint.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mikebfox/awilint/issues"
+  },
+  "homepage": "https://github.com/mikebfox/awilint#readme",
+  "engines": {
+    "node": ">=20"
+  }
+}
